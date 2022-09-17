@@ -1,4 +1,4 @@
-setElementText("#lastModified", "Last modified: " + (new Date(Document.lastModified).toLocaleString('en-us')))
+setElementText("#lastModified", "Last modified: " + (new Date(document.lastModified).toLocaleString('en-us')))
 //still getting that error
 setElementText("#copywrite-year", (new Date()).getFullYear());
 
