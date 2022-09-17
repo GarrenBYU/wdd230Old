@@ -1,0 +1,17 @@
+/* Fonts from Google Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+header{
+    background-color: blue;
+    display:grid;
+    grid-template-columns: 150px auto;
+    list-style: none;
+}
+.name-photo img{
+    width: 50%;
+
+}
+/*.name{
+    text-align: right;
+    text-align-last: right;
+}*/
