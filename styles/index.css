@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 .header{
-    background-color: blue;
+    background-color: darkgreen;
     display:grid;
     grid-template-rows: 66px 66px 66px;
     height: 198px;
@@ -21,4 +21,9 @@
     text-align: center;
     color: aliceblue;
 
+}
+footer{
+    background-color: darkgreen;
+    color:aliceblue;
+    text-align: center;
 }
