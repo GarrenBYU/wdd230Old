@@ -1,0 +1,12 @@
+@media (min-width: 32.5em){
+    .header{
+        background-color: black;
+    
+    }
+    .name{
+        color:crimson
+    }
+    .footer{
+        background-color: firebrick;
+    }
+}
