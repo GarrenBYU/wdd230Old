@@ -4,6 +4,7 @@
         display:grid;
         grid-template-rows: 66px 66px 66px;
         height: 198px;
+        border-radius: 50px 50px 50px 50px;
     
     }
 
@@ -15,15 +16,22 @@
     
     }
 
+    .list-assignments{
+        padding-left: 50px;
+    }
+
     .name{
         grid-row: 2 / 3;
         text-align: center;
         color: aliceblue;
     
     }
-    .footer{
+    footer{
         background-color: darkgray;
         color:aliceblue;
         text-align: center;
     }
+
+    p{padding: 1em;
+        font-family: sans-serif;}
 }
