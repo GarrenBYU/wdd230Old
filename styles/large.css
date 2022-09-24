@@ -1,0 +1,29 @@
+@media (min-width: 65em){
+    .header{
+        background-color:darkorange;
+        display:grid;
+        grid-template-rows: 66px 66px 66px;
+        height: 198px;
+    
+    }
+
+    .name-photo img{
+        float:left;
+        height: 165px;
+        padding-left: 15px;
+        padding-top: 15px;
+    
+    }
+
+    .name{
+        grid-row: 2 / 3;
+        text-align: center;
+        color: aliceblue;
+    
+    }
+    .footer{
+        background-color: darkgray;
+        color:aliceblue;
+        text-align: center;
+    }
+}

@@ -1,12 +1,24 @@
 @media (min-width: 32.5em){
     .header{
-        background-color: black;
+        background-color: blue;
     
     }
+
+    .name-photo img{
+        float:left;
+        height: 165px;
+        padding-left: 15px;
+        padding-top: 15px;
+    
+    }
+
     .name{
+        grid-row: 2 / 3;
+        text-align: center;
         color:crimson
     }
+
     .footer{
-        background-color: firebrick;
+        background-color: black;
     }
 }
