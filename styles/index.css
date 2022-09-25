@@ -1,37 +1,72 @@
 /* Fonts from Google Fonts*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
-header{
-    background-color: darkgreen;
-    display:grid;
-    grid-template-rows: 66px 66px 66px;
-    height: 198px;
-    font-family: "Merriweather", sans-serif;
-}
+@media (max-width: 32.5em){
+    header{
+        background-color: darkgreen;
+        display:grid;
+        grid-template-rows: 66px 66px 66px;
+        height: 198px;
+        font-family: "Merriweather", sans-serif;
+    }
 
-.name-photo img{
-    float:left;
-    height: 165px;
-    padding-left: 15px;
-    padding-top: 15px;
+    .name-photo img{
+        float:left;
+        height: 165px;
+        padding-left: 15px;
+        padding-top: 15px;
 
-}
+    }
 
-.list-assignment{
-    padding-left: 15px;
-}
+    .main_design{
+        display:grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    .section3{
+        grid-row: 1 / 2;
+        text-align: center;
+        background-color: green;
+    }
+    .section2{
+        grid-row: 2 / 3;
+        text-align: center;
+        background-color: green;
+        margin-top: 15px;
+    }
+    .section1{
+        grid-row: 3 / 4;
+        text-align: center;
+        background-color: green;
+        margin-top: 15px;
+    }
 
-.name{
-    grid-row: 2 / 3;
-    text-align: center;
-    color: aliceblue;
 
+    .list-assignment{
+        padding-left: 15px;
+    }
+
+    .name{
+        grid-row: 2 / 3;
+        text-align: center;
+        color: aliceblue;
+
+    }
+
+    .author{
+        grid-row: 3 / 4;
+        text-align: center;
+        color: aliceblue;
+    }
+
+    footer{
+        background-color: black;
+        color:aliceblue;
+        text-align: center;
+        font-family: "Merriweather", sans-serif;
+    }
+    p{
+    font-family: sans-serif;}
+    img{
+        max-width: 100%;
+    }
 }
-footer{
-    background-color: darkgreen;
-    color:aliceblue;
-    text-align: center;
-    font-family: "Merriweather", sans-serif;
-}
-p{
-font-family: sans-serif;}
