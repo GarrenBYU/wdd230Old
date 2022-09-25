@@ -1,6 +1,7 @@
 @media (min-width: 32.5em){
     .header{
         background-color: blue;
+        font-family: "Merriweather", sans-serif;
     
     }
 
@@ -12,6 +13,10 @@
     
     }
 
+    .list-assignments{
+        padding-left: 50px;
+    }
+
     .name{
         grid-row: 2 / 3;
         text-align: center;
@@ -20,5 +25,10 @@
 
     .footer{
         background-color: black;
+        font-family: "Merriweather", sans-serif;
+    }
+
+    p{
+        font-family: sans-serif;
     }
 }
