@@ -22,7 +22,7 @@
     .main_design{
         display:grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        
     }
     .section3{
         grid-column: 1 / 2;
