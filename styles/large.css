@@ -13,17 +13,31 @@
     }
 
     .main_design{
+        display:grid; 
         grid-template-columns: repeat(3, 1fr);
     }
 
     .section3{
         grid-column: 1 / 2;
+        text-align: center;
+        width: 80%;
+        background-color: orange;
+        margin-left: 10%;
     }
     .section2{
         grid-column: 2 / 3;
+        text-align: center;
+        width: 80%;
+        background-color: orange;
+        margin-left: 10%;
     }
     .section1{
         grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        text-align: center;
+        background-color: orange;
+        width: 80%;
+        margin-left: 10%;
     }
 
     .name-photo img{
