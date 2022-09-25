@@ -1,6 +1,8 @@
 @media (min-width: 32.5em){
-    .header{
+    header{
         background-color: blue;
+        display:grid;
+        grid-template-rows: 66px 66px 66px;
         font-family: "Merriweather", sans-serif;
     
     }

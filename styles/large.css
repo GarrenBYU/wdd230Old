@@ -1,11 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 @media (min-width: 65em){
-    .header{
+    header{
         background-color:darkorange;
         display:grid;
+        text-align: center;
         grid-template-rows: 66px 66px 66px;
         height: 198px;
-        border-radius: 50px 50px 50px 50px;
+        border-radius: 25px 25px 25px 25px;
+        font-family: "Merriweather", sans-serif;
     
+    }
+
+    .main_design{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .section3{
+        grid-column: 1 / 2;
+    }
+    .section2{
+        grid-column: 2 / 3;
+    }
+    .section1{
+        grid-column: 3 / 4;
     }
 
     .name-photo img{
@@ -13,6 +31,7 @@
         height: 165px;
         padding-left: 15px;
         padding-top: 15px;
+        border-radius: 25px 25px 25px 25px;
     
     }
 
@@ -30,8 +49,11 @@
         background-color: darkgray;
         color:aliceblue;
         text-align: center;
+        border-radius: 25px 25px 25px 25px;
+        font-family: "Merriweather", sans-serif;
+
     }
 
-    p{padding: 1em;
+    p{
         font-family: sans-serif;}
 }
