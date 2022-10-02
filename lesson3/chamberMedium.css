@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Montserrat&display=swap');
-@media (min-width: 65em){
+@media (min-width: 32.5em){
   html {
     background-color: var(--primary-color);
   }
