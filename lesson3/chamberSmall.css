@@ -18,8 +18,8 @@
   header {
     padding: 1em;
     text-align: center;
-    color: var(--paragraph-color-on-color);
-    background-color: var(--paragraph-background-color);
+    color: black;
+    background-color: #EDE6F2;
   }
   header > h1, header > h2 {
     color: var(--headline-color-on-color);
@@ -28,6 +28,8 @@
   p {
       font-family: 'Montserrat', sans-serif;
     padding: 1em;
+    background-color: #746D75;
+    color: black;
   }
 
   .colors {
@@ -131,5 +133,10 @@
     grid-area: right;
     border-top: 1px solid;
     border-right: 1px solid;
+  }
+  .end{
+    color: black;
+    background-color: #EDE6F2;
+    text-align: center;
   }
 }

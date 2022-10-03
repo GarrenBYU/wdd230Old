@@ -14,12 +14,13 @@
   }
   h1, h2, h3, h4, h5, h6 {
       font-family: 'Alkalami', serif;
+      /*background-color: #746D75;*/
   }
   header {
     padding: 1em;
     text-align: center;
-    color: var(--paragraph-color-on-color);
-    background-color: var(--paragraph-background-color);
+    color: black;
+    background-color: #EDE6F2;
   }
   header > h1, header > h2 {
     color: var(--headline-color-on-color);
@@ -28,6 +29,8 @@
   p {
       font-family: 'Montserrat', sans-serif;
     padding: 1em;
+    background-color: #746D75;
+    color: black;
   }
 
   .colors {
@@ -84,6 +87,12 @@
   nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+  }
+  
+  .end{
+    color: black;
+    background-color: #EDE6F2;
+    text-align: center;
   }
 
   .sitemap {
