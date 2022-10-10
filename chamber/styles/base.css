@@ -1,0 +1,107 @@
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+
+.responsive a.ham::before {
+	content: "📪 ";
+}
+
+/* Media Query for medium+ views */
+@media only screen and (max-width: 65em) {
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding:0;
+		max-width:990px;
+		width:autos
+	}
+	.navigation {
+		display: flex;
+		flex-direction: row;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.together{
+		flex-direction: column;
+		margin-left: 1rem;
+		margin-top:1rem;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+	.logo{
+		width: 50px;
+		float: left;
+	}
+	.navigation {
+		list-style: none;
+		padding: 0;
+	}
+	.navigation li:first-child {
+		display: block;
+	}
+	.navigation li {
+		display: none;
+	}
+	.navigation a {
+		display: block;
+		padding: 0.75rem;
+		text-align: left;
+		text-decoration: none;
+		color: black;
+		font-weight: 700;
+		transition: 0.5s;
+		font-size: clamp(1rem, 2vmin, 1.5rem);
+	}
+	
+	header{
+		background-color: #746D75;
+		color:white;
+	}
+	
+	.responsive li {
+		display: block;
+	}
+	
+	.navigation a.ham::before {
+		content: "📬 ";
+	}
+	.responsive a.ham::before {
+		content: "📪 ";
+	}
+	.title{
+		margin:0;
+	}
+	
+	.navigation a:hover {
+		color: black;
+		background-color: white;
+	}
+	.names{
+		display:flex;
+		flex-direction: column;
+		justify-items: center;
+		margin-left: 1rem;
+	}
+	h3{
+		margin:0
+	}
+	.social-media{
+		display: flex;
+	}
+	.date{
+		display: flex;
+		justify-content: center;
+		font-size: 01.5em;
+	}
+}

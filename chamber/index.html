@@ -5,17 +5,23 @@
         <meta charset="utf-8">
         <meta name="description" content="The Snow Capped Chamber Website">
         <!--css style sheets-->
-
+        <link type="text/css" rel="stylesheet" href="/chamber/styles/base.css">
+        <link type="text/css" rel="stylesheet" href="/chamber/styles/medium.css">
+        <link type="text/css" rel="stylesheet" href="/chamber/styles/large.css">
         <!--Google API fonts-->
     </head>
     <body>
         <header>
           <nav>
+            <div class="together">
             <img src="/chamber/images/snowCapped.webp" alt="Logo image" class = "logo">
-            <h1>The Snow Capped Chamber</h1>
+            <div class="names">
+            <h1 class="title">The Snow Capped Chamber</h1>
             <h3>Chamber of Commerce</h3>
-            <ul>
-              
+            </div>
+          </div>
+            <ul class="navigation">
+              <li><a href='#' class="ham">Menu</a></li>
               <li><a href="/wdd230/lesson3/index.html">Discover</a></li>
               <li>
                 <a href="/wdd230/lesson3/target-audiences.html"
@@ -34,13 +40,15 @@
                   >About Us</a
                 >
               </li>
-              <li class="social media">
-                <a href="https://www.facebook.com">facebook</a>
-                <a href="https://www.instagram.com">insta</a>
-              </li>
             </ul>
-            <h2 class="date and day">filler</h2>
-          </nav>
+            <div class="social-media">
+              <a class='facebook' href="https://www.facebook.com"><img src='/chamber/images/Facebook-logo-1536x960.png' height = 50/></a>
+              <a class='insta' href="https://www.instagram.com"><img src='/chamber/images/Instagram-Logo-1536x864.png' height = 50/></a>
+            </div>
+            </nav>
+            <div class="date"></div>
+            <script src='/chamber/scripts/menu.js'></script>
+            <script src='/chamber/scripts/date.js'></script>
         </header>
         <main>
 
@@ -56,6 +64,7 @@
           <p>snowcappedchamber.com</p>
           <h3>Website Logo</h3>
           <img src="/wdd230/lesson3/images/snowCapped.webp" alt="Logo image" class = "logo">
+
         </main>
         <footer>
           <p class = 'end'>&copy; <span id="copywrite-year">2022</span> 💻 Garren C. Meisman 💻 Based in Utah</p>
