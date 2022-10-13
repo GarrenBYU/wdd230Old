@@ -2,32 +2,21 @@
 /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
   <ul class="navigation responsive">
 */
-.responsive li {
-	display: block;
-}
-
-.responsive a.ham::before {
-	content: "📪 ";
-}
-
 /* Media Query for medium+ views */
-@media only screen and (min-width: 65em) {
+@media(min-width: 65em) {
 	nav {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		padding:0;
 		max-width:990px;
-		width:auto
+		width:autos;
 	}
 	.navigation {
 		display: flex;
 		flex-direction: row;
 	}
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
+
 	.navigation a {
 		text-align: center;
 	}
@@ -36,9 +25,7 @@
 		margin-left: 1rem;
 		margin-top:1rem;
 	}
-	.navigation li:first-child {
-		display: none;
-	}
+
 	.logo{
 		width: 50px;
 		float: left;
@@ -48,17 +35,17 @@
 		padding: 0;
 	}
 	.navigation li:first-child {
-		display: block;
+		display: none;
 	}
 	.navigation li {
-		display: none;
+		display: block;
 	}
 	.navigation a {
 		display: block;
 		padding: 0.75rem;
 		text-align: left;
 		text-decoration: none;
-		color: black;
+		color: white;
 		font-weight: 700;
 		transition: 0.5s;
 		font-size: clamp(1rem, 2vmin, 1.5rem);
@@ -67,17 +54,11 @@
 	header{
 		background-color: #746D75;
 		color:white;
+		padding-bottom: 5px;
 	}
 	
 	.responsive li {
 		display: block;
-	}
-	
-	.navigation a.ham::before {
-		content: "📬 ";
-	}
-	.responsive a.ham::before {
-		content: "📪 ";
 	}
 	.title{
 		margin:0;
@@ -98,10 +79,123 @@
 	}
 	.social-media{
 		display: flex;
+		flex-direction: row;
+        order: 3;
 	}
+
+	.facebook, .insta{
+		float:left;
+
+	}
+
 	.date{
 		display: flex;
 		justify-content: center;
 		font-size: 01.5em;
+		background-color: darkgrey;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
+	.weather, .hero, .event, .releases, .spotlights, .sone, .stwo, .sthree, .join{
+		padding-bottom: 100px;
+		background-color: grey;
+		border-style: solid;
+		border-color: black;
+        margin-bottom: 10px;
+	}
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .event{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2
+    }
+    .weather{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .hero{
+        grid-column: 2 / 5;
+        grid-row: 1 / 3;
+    }
+    .releases{
+        grid-column: 2 / 5;
+        grid-row: 3 / 4;
+    }
+    .spotlights{
+        grid-column: 5 / 6;
+        grid-row: 1 / 4;
+        margin-top: 16px;
+
+    }
+
+	.spotlights{
+		padding-bottom: 0px;
+        order: 3;
+        display: flex;
+        flex-direction: column;
+	}
+	.sone, .stwo, .sthree{
+		margin-left: 10px;
+		margin-right: 10px;
+        padding-right: 40%;
+	}
+
+	footer{
+		background-color: #746D75;
+		color: white;
+		align-items: center;
+		justify-content: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-top: 15px;
+	}
+
+	.footerlogo{
+		width: 100px;
+		float: left;
+		align-items: center;
+	}
+
+	.footertitle{
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	.location, .pin, .phone, .email{
+		margin-top: 0px;
+	}
+
+	.end, .myname, .class, #lastModified{
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+    .topFooter{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+       }
+
+    .partThree{
+        align-self: flex-end;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .join, .sthree{
+        display: block;
+    }
+
+
 }
