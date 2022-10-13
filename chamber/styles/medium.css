@@ -11,7 +11,7 @@
 }
 
 /* Media Query for medium+ views */
-@media only screen and (max-width: 32.5em) {
+@media(min-width: 32.5em) {
 	nav {
 		display: flex;
 		align-items: center;
@@ -22,7 +22,7 @@
 	}
 	.navigation {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 	}
 	.navigation li {
 		display: block; /* change state in small view */
@@ -125,20 +125,32 @@
 		border-style: solid;
 		border-color: black;
 	}
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main :nth-child(1){ order: 1; }
+    main :nth-child(2){ order: 5; }
+    main :nth-child(3){ order: 5; }
+    main :nth-child(4){ order: 2; }
+    main :nth-child(5){ order: 3; }
 	.spotlights{
 		padding-bottom: 0px;
-        order: 2;
+        order: 3;
+        display: flex;
+        flex-direction: row;
 	}
 	.sone, .stwo{
 		margin-left: 10px;
 		margin-right: 10px;
+        padding-right: 40%;
 	}
 
 	footer{
 		background-color: #746D75;
 		color: white;
-		display:flex;
-		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		padding-top: 10px;
@@ -164,5 +176,23 @@
 		margin-top: 0px;
 		margin-bottom: 0px;
 	}
+
+    .topFooter{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+       }
+
+    .partThree{
+        align-self: flex-end;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .join, .sthree{
+        display: none;
+    }
 
 }
