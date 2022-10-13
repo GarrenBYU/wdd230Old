@@ -3,6 +3,7 @@
   <ul class="navigation responsive">
 */
 /* Media Query for medium+ views */
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Montserrat&display=swap');
 @media(min-width: 65em) {
 	nav {
 		display: flex;
