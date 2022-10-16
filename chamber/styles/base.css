@@ -20,6 +20,7 @@ p{
 .date{
 	font-family: 'Monserrat', sans-serif;
 	font-size: large;
+	font-weight: normal;
 }
 
 /* Media Query for medium+ views */
