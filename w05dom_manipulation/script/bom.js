@@ -1,14 +1,14 @@
-const input = document.querySelector('.input')
-const button = document.querySelector('.submit')
-const list = document.querySelector('.list')
+const input = document.querySelector('input')
+const button = document.querySelector('button');
+const list = document.querySelector('ul')
 button.addEventListener('click', () => {
-    const myItem = input.ariaValueMax;
+    const myItem = input.value;
     input.value = '';
     const li = document.createElement('li')
     const text = document.createElement('span')
     const but = document.createElement('button')
     but.setAttribute('id', 'delete')
-    but.textContent = 'Delete';
+    but.textContent = '❌';
     li.setAttribute('id', 'inputs')
     li.appendChild(text);
     li.textContent = myItem;
