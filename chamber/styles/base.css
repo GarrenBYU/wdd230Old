@@ -17,6 +17,10 @@ p{
 	content: "📪 ";
 }
 
+.date{
+	font-family: 'Monserrat', sans-serif;
+}
+
 /* Media Query for medium+ views */
 @media only screen and (max-width: 32.5em) {
 	nav {
