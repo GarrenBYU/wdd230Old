@@ -3,6 +3,7 @@
   <ul class="navigation responsive">
 */
 /* Media Query for medium+ views */
+
 @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Montserrat&display=swap');
 @media(min-width: 65em) {
 	nav {
@@ -117,6 +118,7 @@
     }
 
     .event{
+		margin-top: 16px;
         grid-column: 1 / 2;
         grid-row: 1 / 2
     }
@@ -210,7 +212,11 @@
 
     .join, .sthree{
         display: block;
+		margin-top: 0px;
     }
 
+	.chamberMeet{
+		text-align: center;
+	}
 
 }
