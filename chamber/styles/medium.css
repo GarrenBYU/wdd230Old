@@ -121,11 +121,31 @@
 		margin-left: 10px;
 		margin-right: 10px;
 	}
+
+    .join, .sthree{
+        display: none;
+    }
+
+
 	.weather, .hero, .event, .releases, .spotlights, .sone, .stwo{
 		padding-bottom: 100px;
-		background-color: grey;
+		background-color: #EDE6F2;
 		border-style: solid;
 		border-color: black;
+	}
+
+	.weather{
+		flex-basis: 33%;
+		margin-left: 5px;
+	}
+
+	.event{
+		margin-right: 5px;
+	}
+
+	.hero{
+		background-image: url("/wdd230/chamber/images/Mount_Timpanogos_at_sunset.jpg");
+		background-repeat: no-repeat;
 	}
 
     main{
@@ -135,19 +155,27 @@
 
     main :nth-child(1){ order: 1; }
     main :nth-child(2){ order: 5; }
-    main :nth-child(3){ order: 5; }
-    main :nth-child(4){ order: 2; }
-    main :nth-child(5){ order: 3; }
+    main :nth-child(3){ order: 2; }
+    main :nth-child(4){ order: 3; }
+
 	.spotlights{
 		padding-bottom: 0px;
         order: 3;
-        display: flex;
-        flex-direction: row;
+        display: grid;
+		grid-template-columns: 1fr 1fr;
 	}
 	.sone, .stwo{
 		margin-left: 10px;
 		margin-right: 10px;
-        padding-right: 40%;
+        /*padding-right: 40%;*/
+	}
+
+	.sone{
+		grid-column: 1 / 2;
+	}
+
+	.stwo{
+		grid-column: 2 / 3;
 	}
 
 	footer{
@@ -193,8 +221,20 @@
         justify-content: center;
         align-items: center;
     }
-    .join, .sthree{
-        display: none;
-    }
+	.EventAndWeather{
+		display: flex;
+	}
+
+	.chamberMeet{
+		text-align: center;
+	}
+
+	.GreenJoin{
+		background-color: green;
+		width: fit-content;
+		align-self: center;
+		padding: 5px;
+		border-radius: 50px;
+	}
 
 }
